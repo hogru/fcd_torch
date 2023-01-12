@@ -1,9 +1,9 @@
-from importlib import reload
+# from importlib import reload
 
-import fcd_torch.utils
-reload(fcd_torch.utils)
+import fcd_torch.fcd_torch.utils
+# reload(fcd_torch.utils)
 
-from fcd_torch.utils import (
+from fcd_torch.fcd_torch.utils import (
     SmilesDataset,
     calculate_frechet_distance,
     # todevice,
