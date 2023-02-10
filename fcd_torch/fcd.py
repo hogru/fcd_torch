@@ -93,7 +93,7 @@ class FCD:
         ) as progress:
 
             task = progress.add_task(
-                "Calculate activations...", total=len(dataloader)  # size=0
+                "Calculating activations...", total=len(dataloader)  # size=0
             )
 
             """
