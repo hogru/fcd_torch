@@ -11,10 +11,17 @@ except ImportError as e:
     )
     _rdkit_available = False
 import numpy as np
+from scipy import linalg
 from torch import nn
 from torch.utils.data import Dataset
-from .torch_layers import Reverse, IndexTuple, IndexTensor, Transpose, SamePadding1d
-from scipy import linalg
+
+from .torch_layers import (
+    IndexTensor,
+    IndexTuple,
+    Reverse,
+    SamePadding1d,
+    Transpose,
+)
 
 __vocab = [
     "C",

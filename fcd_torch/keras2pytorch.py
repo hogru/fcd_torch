@@ -1,11 +1,12 @@
 import argparse
 import sys
-import tensorflow as tf
-from torch import nn
-from keras.backend.tensorflow_backend import set_session
+
 import keras.backend as K
-from keras.models import load_model
+import tensorflow as tf
 import torch
+from keras.backend.tensorflow_backend import set_session
+from keras.models import load_model
+from torch import nn
 
 
 def masked_accuracy(y_true, y_pred):
